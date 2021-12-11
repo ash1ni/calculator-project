@@ -23,7 +23,7 @@ class Calculator {
     chooseOperation(operation) {
       if (this.currentOperand === '') return
       if (this.previousOperand !== '') {
-         this.compute()
+          this.compute()
 
       }
       this.operation = operation
@@ -36,9 +36,7 @@ class Calculator {
       const prev = parseFloat(this.previousOperand)
       const current = parseFloat(this.currentOperand)
       if (isNaN(prev) || isNaN(current)) return
-
       
-    
       switch (this.operation) {
         
         case '÷':
@@ -136,6 +134,5 @@ class Calculator {
   })
   
   
-//let screen= document.getElementById('ans'); 
-//buttons = document.querySelectorAll('button');
+
   
